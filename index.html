@@ -943,10 +943,22 @@
             <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 
             <section class="slide title-slide active" id="slide-0">
+<style>
+  .t-outline { display:grid; grid-template-columns:repeat(4, 250px); gap:16px; margin-top:44px; text-align:left; position:relative; z-index:2; }
+  .t-outline div { padding:12px 14px; border-radius:14px; border-top:6px solid var(--c); background:var(--ui-card-bg); font-size:18px; line-height:1.3; color:var(--ui-text-gray); }
+  .t-outline b { display:block; font-size:22px; color:var(--ui-text-black); margin-bottom:4px; }
+  .t-outline b span { color:var(--c); margin-right:6px; }
+</style>
 <h2>Scaling Image Classification</h2>
 <p class="subtitle">Beyond ImageNet</p>
 <p class="author">Pau Rodriguez</p>
-<p class="meta">Master in Computer Vision Barcelona &bull; 2 hours</p>
+<p class="meta">Master in Computer Vision Barcelona</p>
+<div class="t-outline" role="list" aria-label="Outline: four chapters">
+<div role="listitem" style="--c:var(--ui-text-gray)"><b><span>1</span>Data</b>why we need more varied data</div>
+<div role="listitem" style="--c:var(--fam-st)"><b><span>2</span>Supervised transformers</b>more labels, fewer assumptions</div>
+<div role="listitem" style="--c:var(--fam-cap)"><b><span>3</span>Image–caption</b>captions replace hand labels</div>
+<div role="listitem" style="--c:var(--fam-ssl)"><b><span>4</span>Self-supervised</b>learn from the images alone</div>
+</div>
 </section>
 
 <section class="slide" id="slide-1">
