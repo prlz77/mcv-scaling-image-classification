@@ -943,11 +943,32 @@
             <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 
             <section class="slide title-slide active" id="slide-0">
+<style>
+  .ts { width:1200px; display:grid; grid-template-columns:1fr 368px; gap:72px; align-items:center; text-align:left; position:relative; z-index:2; }
+  .ts .kick { font-size:18px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--ui-text-gray); margin:0 0 18px; }
+  .slide.title-slide .ts h2 { font-size:76px; line-height:1.02; letter-spacing:-1.5px; margin:0 0 14px; text-align:left; }
+  .slide.title-slide .ts .subtitle { font-size:34px; margin:0; color:var(--ui-text-gray); }
+  .ts .bar { display:flex; gap:6px; margin:34px 0 30px; }
+  .ts .bar i { width:52px; height:6px; border-radius:3px; background:var(--c); }
+  .slide.title-slide .ts .author { font-size:30px; font-weight:600; margin:0 0 6px; color:var(--ui-text-black); }
+  .ts .date { font-size:20px; color:var(--ui-text-gray); margin:0; }
+  .slide.title-slide .ts > svg { display:block; width:368px; height:368px; margin:0; filter:drop-shadow(0 6px 18px rgba(0,0,0,.12)); }
+  .slide.title-slide .ts svg svg { width:86px; height:86px; margin:0; }  /* the deck styles every title-slide svg as an 80×96 logo */
+</style>
+<div class="ts">
+<div>
+<p class="kick">Master in Computer Vision Barcelona</p>
 <h2>Scaling Image Classification</h2>
 <p class="subtitle">Beyond ImageNet</p>
+<div class="bar" aria-hidden="true"><i style="--c:var(--ui-text-gray)"></i><i style="--c:var(--fam-st)"></i><i style="--c:var(--fam-cap)"></i><i style="--c:var(--fam-ssl)"></i></div>
 <p class="author">Pau Rodriguez</p>
-<p class="meta">Master in Computer Vision Barcelona</p>
-<p class="meta" style="margin-top:6px;">18th December 2026 (v1)</p>
+<p class="date">18th December 2026 · v1</p>
+</div>
+<svg viewBox="0 0 368 368" width="368" height="368" role="img" aria-label="A photo of a cow lying on a mountain meadow, split into a 4 by 4 grid of patches, the way a vision transformer reads an image.">
+<defs><clipPath id="tsclip"><rect width="368" height="368"/></clipPath><image id="tscow" href="figures/shortcut/cow-grass.png" x="0" y="0" width="276" height="264"/></defs>
+<svg x="0" y="0" width="86" height="86" viewBox="6.0 0.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="0" y="0" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="94" y="0" width="86" height="86" viewBox="72.0 0.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="94" y="0" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="188" y="0" width="86" height="86" viewBox="138.0 0.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="188" y="0" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="282" y="0" width="86" height="86" viewBox="204.0 0.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="282" y="0" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="0" y="94" width="86" height="86" viewBox="6.0 66.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="0" y="94" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="94" y="94" width="86" height="86" viewBox="72.0 66.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="94" y="94" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="188" y="94" width="86" height="86" viewBox="138.0 66.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="188" y="94" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="282" y="94" width="86" height="86" viewBox="204.0 66.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="282" y="94" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="0" y="188" width="86" height="86" viewBox="6.0 132.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="0" y="188" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="94" y="188" width="86" height="86" viewBox="72.0 132.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="94" y="188" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="188" y="188" width="86" height="86" viewBox="138.0 132.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="188" y="188" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="282" y="188" width="86" height="86" viewBox="204.0 132.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="282" y="188" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="0" y="282" width="86" height="86" viewBox="6.0 198.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="0" y="282" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="94" y="282" width="86" height="86" viewBox="72.0 198.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="94" y="282" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="188" y="282" width="86" height="86" viewBox="138.0 198.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="188" y="282" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/><svg x="282" y="282" width="86" height="86" viewBox="204.0 198.0 66.0 66.0" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#tscow"/></svg><rect x="282" y="282" width="86" height="86" rx="8" style="fill:none;stroke:rgba(0,0,0,.08);stroke-width:1"/>
+</svg>
+</div>
 </section>
 
 <section class="slide" id="slide-1">
